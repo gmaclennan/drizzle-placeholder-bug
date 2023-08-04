@@ -15,3 +15,11 @@ stmt.run({ bool: true, list: [] })
 
 console.log(db.select().from(table).get())
 // { bool: true, list: { name: 'list' } }
+
+db.delete(table).run()
+
+db.insert(table).values({ bool: true, list: [] }).run()
+// works as expected
+// { bool: true, list: [] }
+
+console.log(db.select().from(table).get())
