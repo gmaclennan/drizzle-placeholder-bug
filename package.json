@@ -1,0 +1,23 @@
+{
+  "name": "drizzle-placeholder-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:push": "drizzle-kit push:sqlite --schema=schema.js --driver=better-sqlite --url=sqlite.db"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^8.5.0",
+    "drizzle-orm": "0.27.2"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.4",
+    "drizzle-kit": "^0.19.12",
+    "typescript": "^5.1.6"
+  }
+}
